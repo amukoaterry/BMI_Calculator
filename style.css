@@ -1,0 +1,418 @@
+.body{ 
+    position: relative;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+
+}
+.container{
+    background-color: #C2E0CC;
+    height: 850px;
+    width: 800px;
+    border-radius: 60px;
+    margin-top: 1.5%; 
+    position: absolute;
+    z-index: 2;
+    gap: 100px;
+
+ }
+.background-image{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    zoom: 70%;
+}
+
+ 
+ .title{
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    
+    object-fit:contain;
+}
+/* Landing page */
+.landing-page{
+    display: flex;
+    justify-content: space-around;
+}
+.logo-landing-page{
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.BMI{
+    margin-top: 2%;
+    width: 800px;
+    height: 500px;
+
+}
+
+h2{
+    font-size: 90px;
+    margin-top: 11%;
+    font-weight: bold;
+    color: #744C27;
+    font-family: monospace;
+}
+body{
+    background-color: #C2E0CC;
+        font-family: monospace;
+
+}
+
+a{
+    text-decoration: none;
+    background-color: rgb(99,130,149);
+    margin-left: 30%;
+    border: solid 1px rgb(99,130,149);
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+ 
+
+}
+
+/* BMI UI */
+
+.bmi-container{
+    margin-left:140px;
+    align-items: center;
+    margin-top: 15px;
+    }
+   
+    .input-text input{
+    width:200px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    border-color:white;
+    
+    
+    }
+    label{
+        font-size: 20px;
+        font-family: monospace;
+
+    }
+    .number{
+    font-size: 20px;
+    font-family: monospace;
+
+
+}
+
+
+    .input_Text input{
+      width:200px;
+      height: 60px;
+      border-radius: 15px;
+      border: none;
+      text-align: center;
+    }
+    .input-text input{
+        text-align: center;
+    }
+    
+    .input-text select{
+      width:150px;
+      height: 60px;
+      border-radius: 15px;
+      border: none;
+      text-align: center;
+      margin-left:40px;
+      font-size: 18px;
+      font-family: monospace;
+
+    
+    
+    
+    }
+    .input_Text select{
+      width:150px;
+      height: 60px;
+      border-radius: 15px;
+      border: none;
+      text-align: center;
+      margin-left: 40px;
+      font-size: 18px;
+      font-family: monospace;
+
+
+    }
+    .btn{
+      width:200px;
+      height: 60px;
+      border-radius: 15px;
+      border: none;
+    
+    }
+    .buttons{
+    display: flex;
+    margin-top: 15px;
+
+    }
+    .submit_button button{
+      width:150px;
+      height: 60px;
+      border-radius: 15px;
+      border: none;
+      margin-top:0px;
+      margin-left:120px;
+    background-color: green;
+    color: white;
+    font-family: monospace;
+
+    }
+    .reset_button button{
+      width:150px;
+      height: 60px;
+      margin-left: 72px;
+      border-radius: 15px;
+      border: none;
+      margin-top: 0px;
+    background-color: crimson;
+    color: white;
+    font-family: monospace;
+
+    }
+    form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    }
+
+    :root {
+        --underweight: orange;
+        --normal: green;
+        --overweight: lightcoral;
+        --obese: crimson;
+    
+    }
+    
+    .output{
+        text-align: center;
+        margin-top: 55px;
+    
+    }
+    
+    .output #bmi {
+      font-size: 4rem;
+    }
+    
+    .output #desc strong {
+        text-transform: uppercase;
+    }
+    
+    .bmi-scale {
+        display: flex;
+        width: 600px;
+        margin-left: 110px;
+        margin-top: 20px;
+        
+    
+    }
+    
+    .bmi-scale div {
+        flex: 1;
+        text-align: center;
+        text-transform: uppercase;
+        border-top: 5px solid var(--color);
+        padding: 10px;
+    }
+    
+    .bmi-scale h4 {
+        font-size: 0.75rem;
+        color: slategray;
+    
+    }
+    
+    .underweight{
+        color: var(--underweight);
+    }
+    
+    .healthy{
+        color: var(--normal)
+    }
+    
+    .overweight{
+        color: var(--overweight);
+    }
+    
+    .obese{
+        color: var(--obese);
+    }
+    h3{
+        font-size: 21px;
+    }
+    #desc{
+        font-size: 21px;
+    }
+    ::placeholder{
+        font-size: medium;
+        text-align: center;
+    }
+
+    @media screen and (min-width:280px) and (max-width:1024px){
+        .landing-page{
+            flex-wrap: wrap;
+        }
+        
+        .BMI{
+            width: 270px;
+            height: 180px;
+        }
+        .logo-landing-page{
+            margin-left: 5%;
+            margin-top: 2%;
+            width: 75px;
+        }
+        
+
+        h2{
+             font-size: 40px;
+        } 
+
+        a{
+         text-decoration: none;
+         margin-left: 15%;
+        }
+/* BMI USER INTERFACE */
+    .body{ 
+    height: 95vh;
+    flex-wrap: wrap;
+    }
+
+    .container{
+        height: 650px;
+        width: 400px;
+    }
+
+    .background-image{
+        width: 50%;
+        height: 50%;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+    .header{
+        flex-wrap: wrap;
+    }
+
+    .bmi-container{
+        margin-left:70px;
+        margin-top: 10px;
+        }
+
+        .input-text input{
+            width:100px;
+            height: 30px;
+            margin-top:0px;
+            font-size: 10px;
+        }
+
+        label{
+            font-size: 10px;
+        }
+
+        .number{
+            font-size: 10px;
+        }
+
+        .input_Text input{
+            width:100px;
+            height: 30px;
+          }
+        
+
+          .input_Text select{
+            width: 75px;
+            height: 30px;
+            margin-left: 20px;
+            font-size: 9px;
+          }
+
+          .input-text select{
+            width:75px;
+            height: 30px;
+            margin-left:5px;
+            font-size: 9px;
+           }
+
+           .btn{
+            width:100px;
+            height: 30px;
+          }
+
+          .buttons{
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .submit_button button{
+            width:75px;
+            height: 30px;
+            margin-left:60px;
+          }
+        
+          .reset_button button{
+            width:75px;
+            height: 30px;
+            margin-left: 36px;
+         }
+
+         form{
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .output #bmi {
+            font-size: 2rem;
+          }
+        
+
+
+    .bmi-scale {
+        flex-wrap: wrap;
+        width: 300px;
+        margin-left: 55px;
+        margin-top: 10px;
+    }
+
+    .bmi-scale h4 {
+        font-size: 0.35rem;
+    }
+    
+    h3{
+        font-size: 11px;
+    }
+     
+    #desc{
+        font-size: 13px;
+    }
+    ::placeholder{
+        font-size: xx-small;
+    }
+
+    }
+       
